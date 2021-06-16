@@ -21,10 +21,7 @@ ForwardIt partition(ForwardIt first, ForwardIt last, UnaryPredicate p)
     for(auto it = first; it != last; it++) {
         for(auto jt = first; jt != it; jt++) {
             if(p(*it) && !p(*jt)) {
-                ForwardIt aux = last+1;
-                *aux = *it;
-                *it = *jt;
-                *jt = *aux;
+                std::swap(*it, *jt);
                 lastTrue = jt+1;
             }
 
