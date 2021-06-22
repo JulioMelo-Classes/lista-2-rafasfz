@@ -11,7 +11,8 @@ using std::sort;
 namespace graal {
 
 /*! 
- *
+ * Inverte a ordem de cada elemento em um range
+ * 
  * @tparam BidirIt iterator para o range.
  * 
  * @param first Ponteiro para o primeiro elemento do range
