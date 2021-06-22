@@ -11,7 +11,15 @@ using std::sort;
 namespace graal {
 
 /*! 
- * TODO: documentação no estilo doxygen
+ * 
+ * @tparam InputIt iterator para o range.
+ * 
+ * @param first Ponteiro para o primeiro elemento do range que vai ser copiado
+ * @param last Ponteiro para a posição logo após o último elemento do range que vai ser copiado
+ * @param d_first Ponteiro para o primeiro elemento do range que vai receber o range que foi copiado
+ * 
+ * @return Um iterator apontado para a posição logo após o último elemento do range cópia.
+ * 
  */
 template<class InputIt>
 InputIt copy(InputIt first, InputIt last, InputIt d_first)
