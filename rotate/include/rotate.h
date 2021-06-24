@@ -11,7 +11,15 @@ using std::sort;
 namespace graal {
 
 /*! 
- * TODO: documentação no estilo doxygen
+ *
+ * @tparam ForwardIt iterator para o range.
+ *
+ * @param first Ponteiro para o primeiro elemento do range
+ * @param last Ponteiro para a posição logo após o último elemento do range
+ * @param n_first Ponteiro para a posição que sera o novo primeiro elemnto do range
+ *
+ * @return Um iterator para a posição onde se encontra o primeiro elemento do range antes da rotação
+ *
  */
 template<class ForwardIt>
 ForwardIt rotate(ForwardIt first, ForwardIt n_first, ForwardIt last)
