@@ -11,7 +11,17 @@ using std::sort;
 namespace graal {
 
 /*! 
- * TODO: documentação no estilo doxygen
+ * 
+ * @tparam InputIt iterator para o range.
+ * @tparam T tipo dos elementos apontado pelos elmentos do range
+ * @tparam Verificar se os elmentos são iguais
+ * 
+ * @param first Ponteiro para o primeiro elemento do range
+ * @param last Ponteiro para a posição logo após o último elemento do range
+ * @param value O valor a ser comparado na função
+ * 
+ * @return Um iterator (ou ponteiro) para o primeiro elemento que satisfaz a função eq ou caso nenhum elmeento satisfaça a posição logo após a última do range.
+ * 
  */
 template<class InputIt, class T, class Equal>
 InputIt find(InputIt first, InputIt last, const T& value, Equal eq)
