@@ -11,7 +11,16 @@ using std::sort;
 namespace graal {
 
 /*! 
- * TODO: documentação no estilo doxygen
+ *
+ * @tparam InputIt iterator para o range.
+ * @tparam UnaryPredicate o tipo de uma função bool(const T &a)
+ * 
+ * @param first Ponteiro para o primeiro elemento do range
+ * @param last Ponteiro para a posição logo após o último elemento do range
+ * @param p Função para a validação dos elmentos do range para um determinado prediado
+ * 
+ * @return true caso todos os elementos satisfaçam o predicado, se não false
+ * 
  */
 template<class InputIt, class UnaryPredicate>
 bool all_of(InputIt first, InputIt last, UnaryPredicate p)
@@ -32,7 +41,16 @@ bool all_of(InputIt first, InputIt last, UnaryPredicate p)
 }
 
 /*! 
- * TODO: documentação no estilo doxygen
+ *
+ * @tparam InputIt iterator para o range.
+ * @tparam UnaryPredicate o tipo de uma função bool(const T &a)
+ * 
+ * @param first Ponteiro para o primeiro elemento do range
+ * @param last Ponteiro para a posição logo após o último elemento do range
+ * @param p Função para a validação dos elmentos do range para um determinado prediado
+ * 
+ * @return true caso um elemento satisfaça o predicado, se não false
+ * 
  */
 template<class InputIt, class UnaryPredicate>
 bool any_of(InputIt first, InputIt last, UnaryPredicate p)
@@ -51,7 +69,16 @@ bool any_of(InputIt first, InputIt last, UnaryPredicate p)
 }
 
 /*! 
- * TODO: documentação no estilo doxygen
+ *
+ * @tparam InputIt iterator para o range.
+ * @tparam UnaryPredicate o tipo de uma função bool(const T &a)
+ * 
+ * @param first Ponteiro para o primeiro elemento do range
+ * @param last Ponteiro para a posição logo após o último elemento do range
+ * @param p Função para a validação dos elmentos do range para um determinado prediado
+ * 
+ * @return true caso todos os elementos não satisfaçam o predicado, se não false
+ * 
  */
 template<class InputIt, class UnaryPredicate>
 bool none_of(InputIt first, InputIt last, UnaryPredicate p)
