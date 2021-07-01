@@ -19,6 +19,9 @@ namespace graal {
  * @param last Ponteiro para a posição logo após o último elemento do range
  * 
  */
+ /*
+ ok
+ */
 template<class BidirIt>
 void reverse(BidirIt first, BidirIt last)
 {   

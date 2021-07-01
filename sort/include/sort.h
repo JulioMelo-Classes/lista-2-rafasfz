@@ -22,6 +22,9 @@ namespace graal {
  * @param cmp A função de comparação que retorna true quando o primeiro parâmetro é menor do que o segundo
  *
  */
+ /*
+ ok
+ */
 template<class ForwardIt, class Comparison>
 void sort(ForwardIt first, ForwardIt last, Comparison cmp)
 {

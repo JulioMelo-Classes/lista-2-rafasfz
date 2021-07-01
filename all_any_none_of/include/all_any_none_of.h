@@ -22,6 +22,9 @@ namespace graal {
  * @return true caso todos os elementos satisfaçam o predicado, se não false
  * 
  */
+ /*
+ blz!
+ */
 template<class InputIt, class UnaryPredicate>
 bool all_of(InputIt first, InputIt last, UnaryPredicate p)
 {

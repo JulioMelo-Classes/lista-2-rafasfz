@@ -21,6 +21,9 @@ namespace graal {
  * 
  * @return Um interator apontado para o primeiro elemento que satisfaz p ou se nenhum elemento satisfazer o preciado um interator apontatodo para a posição logo após o último elemento do range
  */
+ /*
+ ok
+ */
 template<class InputIt, class UnaryPredicate>
 InputIt find_if(InputIt first, InputIt last, UnaryPredicate p)
 {

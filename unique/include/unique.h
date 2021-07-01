@@ -23,6 +23,9 @@ namespace graal {
  * @return true caso ache o ponteiro iterator no vetor
  *
  */
+ /*
+ ok
+ */
 template<class InputIt, class Equal>
 bool search(vector<InputIt>& v, InputIt it, Equal eq) {
     for(InputIt value : v) {
